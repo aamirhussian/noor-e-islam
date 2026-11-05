@@ -14,12 +14,17 @@
     <link rel="manifest" href="/manifest.json" />
 
     <!-- Netlify बैनर को पूरी तरह छिपाने के लिए CSS -->
-    <style>#netlify-badge,a[href*="netlify.com/builder"]{visibility:hidden!important;opacity:0!important;display:none!important}</style>
-    <script type="module" crossorigin src="/assets/index-M7WDft2r.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-eCz3ELAq.css">
+    <style>
+      #netlify-badge, a[href*="netlify.com/builder"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+      }
+    </style>
   </head>
   <body class="bg-[#f8f5ee] text-[#1c2e24] antialiased">
     <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
 
     <!-- नेटिव इंस्टॉलेशन पॉप-अप को ट्रिगर करने के लिए जावास्क्रिप्ट -->
     <script>

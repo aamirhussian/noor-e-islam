@@ -1,0 +1,6 @@
+{
+  "name": "Noor-e-Islam - Complete Islamic Super App & Platform",
+  "description": "Comprehensive Islamic digital platform featuring Holy Quran with audio recitation, prayer times and Adhan, Qibla compass, Islamic books, daily duas, digital tasbeeh, Hijri calendar, learning center, and wallpapers.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
