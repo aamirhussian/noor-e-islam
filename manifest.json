@@ -1,0 +1,17 @@
+ {
+  "name": "Noor-e-Islam (نورِ اسلام)",
+  "short_name": "Noor-e-Islam",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#064e3b",
+  "theme_color": "#064e3b",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='110' fill='%23064e3b'/%3E%3Ccircle cx='256' cy='256' r='185' fill='none' stroke='%23d4af37' stroke-width='14'/%3E%3Cpath d='M256 120 c-30 40 -30 90 0 130 c30 -40 30 -90 0 -130 z' fill='%23d4af37'/%3E%3Ctext x='50%25' y='72%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='40' fill='%23d4af37' font-weight='bold' letter-spacing='2'%3ENOOR-E-ISLAM%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["lifestyle", "books", "education"]
+}

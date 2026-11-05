@@ -1,0 +1,41 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Noor-e-Islam (نورِ اسلام) - Complete Islamic Super App</title>
+    <meta name="theme-color" content="#064e3b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- कोड से जनरेटेड सुंदर इस्लामिक आइकॉन (बिना किसी PNG फ़ाइल के) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='110' fill='%23064e3b'/%3E%3Ccircle cx='256' cy='256' r='185' fill='none' stroke='%23d4af37' stroke-width='14'/%3E%3Cpath d='M256 120 c-30 40 -30 90 0 130 c30 -40 30 -90 0 -130 z' fill='%23d4af37'/%3E%3Ctext x='50%25' y='72%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='40' fill='%23d4af37' font-weight='bold' letter-spacing='2'%3ENOOR-E-ISLAM%3C/text%3E%3C/svg%3E" />
+    
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Netlify बैनर को पूरी तरह छिपाने के लिए CSS -->
+    <style>#netlify-badge,a[href*="netlify.com/builder"]{visibility:hidden!important;opacity:0!important;display:none!important}</style>
+    <script type="module" crossorigin src="/assets/index-M7WDft2r.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-eCz3ELAq.css">
+  </head>
+  <body class="bg-[#f8f5ee] text-[#1c2e24] antialiased">
+    <div id="root"></div>
+
+    <!-- नेटिव इंस्टॉलेशन पॉप-अप को ट्रिगर करने के लिए जावास्क्रिप्ट -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('SW Registered', reg))
+            .catch(err => console.log('SW Error', err));
+        });
+      }
+
+      window.deferredPWAEvent = null;
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        window.deferredPWAEvent = e;
+      });
+    </script>
+  </body>
+</html>
